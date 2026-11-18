@@ -1,11 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Academy | VALORANT Beginner Agent Guides</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="module" src="js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    
-</body>
-</html>
+<body><nav class="navbar md:navbar-expand bg-1 fg-2" aria-label="Main navigation">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="index.html">AGENT ACADEMY</a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+      <div class="drawer-header"><h2 class="drawer-title h5" id="navbarNavLabel">Menu</h2><button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close menu"></button></div>
+      <div class="drawer-body"><ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#agents">Agent Guides</a></li>
+        <li class="nav-item"><a class="nav-link "  href="contact.html">Contact</a></li>
+      </ul></div>
+    </dialog>
+  </div>
+</nav><main>
+<header class="container mt-5 text-center"><h1 class="fw-bold">Find Your Agent. Learn Your Role.</h1><p class="fs-4">Six beginner-friendly field guides to VALORANT teamwork, roles and agent styles.</p></header>
+<section class="container mt-3" aria-label="Featured agent guide slides">
+<div id="heroCarousel" class="carousel carousel-overlay" aria-roledescription="carousel" aria-label="Guide highlights">
+<div class="carousel-inner rounded-5">
+<div class="carousel-item active"><img src="images/banner1.jpg" class="d-block w-100" alt="Original graphic inviting players to find their VALORANT agent role, with teal and red geometric shapes"></div>
+<div class="carousel-item"><img src="images/banner2.jpg" class="d-block w-100" alt="Original futuristic teal graphic reminding players to share map information with teammates"></div>
+<div class="carousel-item"><img src="images/banner3.jpg" class="d-block w-100" alt="Original geometric graphic inviting players to explore six VALORANT agent guides"></div>
+</div>
+<div class="carousel-overlay-controls">
+<button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide"><span class="carousel-icon-prev" aria-hidden="true"></span></button>
+<button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide"><span class="carousel-icon-next" aria-hidden="true"></span></button>
+</div>
+</div></section><section id="agents" class="container mt-5" aria-labelledby="agentsTitle"><h2 id="agentsTitle" class="mb-4">Explore the Agents</h2><p>Start with a role that interests you. Open <strong>Details</strong> for a beginner tip, or choose <strong>View Briefing</strong> for an agent overview.</p><div class="row g-4">
+<div class="col-12 md:col-6 lg:col-4">
+  <article class="card h-100">
+    <img src="images/jett.jpg" class="w-100" alt="Original illustrated Jett guide graphic with abstract portrait shapes and a duelist role label" loading="lazy">
+    <div class="card-body d-flex flex-column align-items-center">
+      <h3 class="card-title h4">Jett</h3>
+      <p class="card-text text-center"><strong>Duelist</strong> · Movement & quick entry. Jett is a fast-moving Duelist who creates opportunities for her team to move into contested spaces.</p>
+      <details class="accordion-item w-100" name="details1">
+        <summary class="accordion-header">Details</summary>
+        <div class="accordion-body"><p class="mb-0">Beginner focus: Practice confident movement and pay attention to how teammates follow an entry.</p></div>
+      </details>
+      <button class="btn-solid theme-primary mt-auto mt-4" type="button" data-bs-toggle="dialog" data-bs-target="#briefingDialog1">View Briefing</button>
+    </div>
+  </article>
+</div>
+<div class="col-12 md:col-6 lg:col-4">
+  <article class="card h-100">
+    <img src="images/sage.jpg" class="w-100" alt="Original illustrated Sage guide graphic with abstract portrait shapes and a sentinel role label" loading="lazy">
+    <div class="card-body d-flex flex-column align-items-center">
+      <h3 class="card-title h4">Sage</h3>
+      <p class="card-text text-center"><strong>Sentinel</strong> · Support & protection. Sage is a Sentinel focused on support, slowing pressure and keeping a team organized.</p>
+      <details class="accordion-item w-100" name="details2">
+        <summary class="accordion-header">Details</summary>
+        <div class="accordion-body"><p class="mb-0">Beginner focus: Watch your team’s position and choose moments to support teammates and secure space.</p></div>
+      </details>
+      <button class="btn-solid theme-primary mt-auto mt-4" type="button" data-bs-toggle="dialog" data-bs-target="#briefingDialog2">View Briefing</button>
+    </div>
+  </article>
+</div>
+<div class="col-12 md:col-6 lg:col-4">
+  <article class="card h-100">
+    <img src="images/sova.jpg" class="w-100" alt="Original illustrated Sova guide graphic with abstract portrait shapes and a initiator role label" loading="lazy">
+    <div class="card-body d-flex flex-column align-items-center">
+      <h3 class="card-title h4">Sova</h3>
+      <p class="card-text text-center"><strong>Initiator</strong> · Scouting & information. Sova is an Initiator who helps his team gather information about nearby opponents.</p>
+      <details class="accordion-item w-100" name="details3">
+        <summary class="accordion-header">Details</summary>
+        <div class="accordion-body"><p class="mb-0">Beginner focus: Share information clearly before your teammates commit to a new area.</p></div>
+      </details>
+      <button class="btn-solid theme-primary mt-auto mt-4" type="button" data-bs-toggle="dialog" data-bs-target="#briefingDialog3">View Briefing</button>
+    </div>
+  </article>
+</div>
+<div class="col-12 md:col-6 lg:col-4">
+  <article class="card h-100">
+    <img src="images/brimstone.jpg" class="w-100" alt="Original illustrated Brimstone guide graphic with abstract portrait shapes and a controller role label" loading="lazy">
+    <div class="card-body d-flex flex-column align-items-center">
+      <h3 class="card-title h4">Brimstone</h3>
+      <p class="card-text text-center"><strong>Controller</strong> · Space & coordination. Brimstone is a Controller who helps the team manage sightlines and space.</p>
+      <details class="accordion-item w-100" name="details4">
+        <summary class="accordion-header">Details</summary>
+        <div class="accordion-body"><p class="mb-0">Beginner focus: Think about visibility and how to help teammates move together safely.</p></div>
+      </details>
+      <button class="btn-solid theme-primary mt-auto mt-4" type="button" data-bs-toggle="dialog" data-bs-target="#briefingDialog4">View Briefing</button>
+    </div>
+  </article>
+</div>
+<div class="col-12 md:col-6 lg:col-4">
+  <article class="card h-100">
+    <img src="images/killjoy.jpg" class="w-100" alt="Original illustrated Killjoy guide graphic with abstract portrait shapes and a sentinel role label" loading="lazy">
+    <div class="card-body d-flex flex-column align-items-center">
+      <h3 class="card-title h4">Killjoy</h3>
+      <p class="card-text text-center"><strong>Sentinel</strong> · Area awareness. Killjoy is a Sentinel known for tools that help monitor and protect an area.</p>
+      <details class="accordion-item w-100" name="details5">
+        <summary class="accordion-header">Details</summary>
+        <div class="accordion-body"><p class="mb-0">Beginner focus: Pay attention to defensive coverage and call out what your team needs.</p></div>
+      </details>
+      <button class="btn-solid theme-primary mt-auto mt-4" type="button" data-bs-toggle="dialog" data-bs-target="#briefingDialog5">View Briefing</button>
+    </div>
+  </article>
+</div>
+<div class="col-12 md:col-6 lg:col-4">
+  <article class="card h-100">
+    <img src="images/raze.jpg" class="w-100" alt="Original illustrated Raze guide graphic with abstract portrait shapes and a duelist role label" loading="lazy">
+    <div class="card-body d-flex flex-column align-items-center">
+      <h3 class="card-title h4">Raze</h3>
+      <p class="card-text text-center"><strong>Duelist</strong> · Creative pressure. Raze is a Duelist known for an energetic, space-making style of play.</p>
+      <details class="accordion-item w-100" name="details6">
+        <summary class="accordion-header">Details</summary>
+        <div class="accordion-body"><p class="mb-0">Beginner focus: Coordinate with teammates and focus on when to take initiative.</p></div>
+      </details>
+      <button class="btn-solid theme-primary mt-auto mt-4" type="button" data-bs-toggle="dialog" data-bs-target="#briefingDialog6">View Briefing</button>
+    </div>
+  </article>
+</div></div></section></main><dialog class="dialog" id="briefingDialog1" aria-labelledby="briefingTitle1">
+  <div class="dialog-header"><h2 class="dialog-title h5" id="briefingTitle1">Jett — Agent Briefing</h2><button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close Jett briefing"></button></div>
+  <div class="dialog-body"><p>Jett is a duelist from South Korea. Jett is a fast-moving Duelist who creates opportunities for her team to move into contested spaces.</p><p class="mb-0"><strong>Try this:</strong> Practice confident movement and pay attention to how teammates follow an entry.</p></div>
+  <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
+</dialog>
+<dialog class="dialog" id="briefingDialog2" aria-labelledby="briefingTitle2">
+  <div class="dialog-header"><h2 class="dialog-title h5" id="briefingTitle2">Sage — Agent Briefing</h2><button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close Sage briefing"></button></div>
+  <div class="dialog-body"><p>Sage is a sentinel from China. Sage is a Sentinel focused on support, slowing pressure and keeping a team organized.</p><p class="mb-0"><strong>Try this:</strong> Watch your team’s position and choose moments to support teammates and secure space.</p></div>
+  <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
+</dialog>
+<dialog class="dialog" id="briefingDialog3" aria-labelledby="briefingTitle3">
+  <div class="dialog-header"><h2 class="dialog-title h5" id="briefingTitle3">Sova — Agent Briefing</h2><button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close Sova briefing"></button></div>
+  <div class="dialog-body"><p>Sova is a initiator from Russia. Sova is an Initiator who helps his team gather information about nearby opponents.</p><p class="mb-0"><strong>Try this:</strong> Share information clearly before your teammates commit to a new area.</p></div>
+  <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
+</dialog>
+<dialog class="dialog" id="briefingDialog4" aria-labelledby="briefingTitle4">
+  <div class="dialog-header"><h2 class="dialog-title h5" id="briefingTitle4">Brimstone — Agent Briefing</h2><button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close Brimstone briefing"></button></div>
+  <div class="dialog-body"><p>Brimstone is a controller from United States. Brimstone is a Controller who helps the team manage sightlines and space.</p><p class="mb-0"><strong>Try this:</strong> Think about visibility and how to help teammates move together safely.</p></div>
+  <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
+</dialog>
+<dialog class="dialog" id="briefingDialog5" aria-labelledby="briefingTitle5">
+  <div class="dialog-header"><h2 class="dialog-title h5" id="briefingTitle5">Killjoy — Agent Briefing</h2><button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close Killjoy briefing"></button></div>
+  <div class="dialog-body"><p>Killjoy is a sentinel from Germany. Killjoy is a Sentinel known for tools that help monitor and protect an area.</p><p class="mb-0"><strong>Try this:</strong> Pay attention to defensive coverage and call out what your team needs.</p></div>
+  <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
+</dialog>
+<dialog class="dialog" id="briefingDialog6" aria-labelledby="briefingTitle6">
+  <div class="dialog-header"><h2 class="dialog-title h5" id="briefingTitle6">Raze — Agent Briefing</h2><button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close Raze briefing"></button></div>
+  <div class="dialog-body"><p>Raze is a duelist from Brazil. Raze is a Duelist known for an energetic, space-making style of play.</p><p class="mb-0"><strong>Try this:</strong> Coordinate with teammates and focus on when to take initiative.</p></div>
+  <div class="dialog-footer"><button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">Close</button></div>
+</dialog><footer class="bg-primary fg-contrast-primary py-4 mt-5"><div class="container"><p class="mb-1 fw-bold">AGENT ACADEMY — UNOFFICIAL VALORANT FAN GUIDE</p><p class="mb-0">A student-made learning project. Not affiliated with Riot Games. Original artwork created for this class project.</p></div></footer></body></html>
