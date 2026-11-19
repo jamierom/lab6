@@ -1,4 +1,4 @@
-
+/* Change Bootstrap's primary colors to match VALORANT's red theme. */
 :root {
   --bs-primary-bg: #b32038;
   --bs-primary-fg: #b32038;
@@ -7,6 +7,8 @@
   --bs-primary-focus-ring: #b32038;
   --bs-primary-contrast: #ffffff;
 }
+
+/* Apply the same red colors to the primary buttons. */
 .btn-solid.theme-primary {
   --bs-theme-bg: #b32038;
   --bs-theme-border: #b32038;

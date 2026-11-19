@@ -4,10 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Agent Academy | VALORANT Fan Guide</title>
+<!-- Load Bootstrap 6 first, then my custom theme. -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
 <script type="module" src="js/bootstrap.bundle.min.js"></script>
 </head>
+<!-- Same responsive navbar, with Contact marked as active. -->
 <body><nav class="navbar md:navbar-expand bg-1 fg-2" aria-label="Main navigation">
   <div class="container-fluid">
     <a class="navbar-brand fw-bold" href="index.html">VALORANT AGENT ACADEMY</a>
@@ -23,14 +25,23 @@
       </ul></div>
     </dialog>
   </div>
+<!-- Contact page heading and introduction. -->
 </nav><main class="container mt-5"><header class="text-center mb-5"><h1 class="fw-bold">Contact Us</h1><p class="fs-4">Tell us what agent roles or beginner tutorials you would like to see covered next.</p></header>
+<!-- Form fields display in two columns on medium and larger screens. -->
 <form class="mx-auto" style="max-width: 900px" action="#" method="get">
 <div class="row g-4">
+<!-- First and last name fields. -->
 <div class="col-12 md:col-6"><div class="form-field"><label for="firstName" class="form-label">First Name</label><input type="text" class="form-control" id="firstName" name="firstName" required></div></div>
 <div class="col-12 md:col-6"><div class="form-field"><label for="lastName" class="form-label">Last Name</label><input type="text" class="form-control" id="lastName" name="lastName"></div></div>
+<!-- Email field with browser validation. -->
 <div class="col-12 md:col-6"><div class="form-field"><label for="email" class="form-label">Email</label><input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required></div></div>
+<!-- Dropdown menu for choosing an agent role. -->
 <div class="col-12 md:col-6"><div class="form-field"><label for="roleInterest" class="form-label">Favourite Agent Role</label><select class="form-control" id="roleInterest" name="roleInterest"><option value="">Choose a Role</option><option>Duelist</option><option>Initiator</option><option>Controller</option><option>Sentinel</option></select></div></div>
+<!-- Message box takes the full row. -->
 <div class="col-12"><div class="form-field"><label for="message" class="form-label">Message</label><textarea class="form-control" id="message" name="message" rows="5" placeholder="" required></textarea></div></div>
+<!-- Bootstrap 6 checkbox for contact consent. -->
 <div class="col-12"><div class="form-check"><input class="form-check-input" type="checkbox" id="consent" name="consent" required><label class="form-check-label" for="consent">I agree to be contacted about my message.</label></div></div></div>
+<!-- Submit button using the custom primary theme. -->
 <button type="submit" class="btn-solid theme-primary mt-5">Contact Us</button>
+<!-- Footer matches the homepage. -->
 </form></main><footer class="bg-primary fg-contrast-primary py-4 mt-5"><div class="container"><p class="mb-1 fw-bold">AGENT ACADEMY: AN UNOFFICIAL VALORANT FAN GUIDE</p><p class="mb-0">Jamie Romano | CCT360. Not affiliated with Riot Games.</p></div></footer></body></html>
